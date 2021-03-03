@@ -51,7 +51,7 @@ class Queue {
   }
 
   // Return the next item in the queue.
-  show() {
+  showNext() {
     // if the queue is empty, there is no node to return
     if (!this.first) {
       return null;
@@ -61,9 +61,21 @@ class Queue {
     return this.first.value;
   }
 
-  all() {
-    // Return all items in the queue.
+  showAll () {
+    // declare a variable so the current node is the first node
+    let currentNode = this.first;
+    // loop through the nodes as long as the current node is not null
+    while (currentNode !== null) {
+      // set the current node to be equal to the next node to keep looping
+      console.log(currentNode.value);
+      currentNode = currentNode.next;
+    }
   }
-}
+};
 
-module.exports = Queue;
+
+returnAll() {
+  // Return all items in the queue.
+};
+
+module.exports = {Queue, returnAll};
