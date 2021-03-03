@@ -61,7 +61,8 @@ class Queue {
     return this.first.value;
   }
 
-  showAll () {
+  // show all items in the queue
+  showAll() {
     // declare a variable so the current node is the first node
     let currentNode = this.first;
     // loop through the nodes as long as the current node is not null
@@ -71,11 +72,24 @@ class Queue {
       currentNode = currentNode.next;
     }
   }
-};
 
-
-returnAll() {
   // Return all items in the queue.
-};
+  returnAll() {
+    // declare an empty array
+    let result = [];
 
-module.exports = {Queue, returnAll};
+    // declare current variable set to the first node
+    let currentNode = this.first;
+
+    // loop through nodes as long as the current node is not null
+    while (currentNode !== null) {
+      // push the value of the current node into the array & set the current node equal to the next node
+      result.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    // return the array of all node values
+    return result;
+  }
+}
+
+module.exports = { Queue };
