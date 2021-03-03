@@ -50,8 +50,15 @@ class Queue {
     return node.value;
   }
 
+  // Return the next item in the queue.
   show() {
-    // Return the next item in the queue.
+    // if the queue is empty, there is no node to return
+    if (!this.first) {
+      return null;
+    }
+
+    // return the value from the first node in the queue
+    return this.first.value;
   }
 
   all() {
