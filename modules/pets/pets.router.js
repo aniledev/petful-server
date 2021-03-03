@@ -24,4 +24,14 @@ router.delete('/', json, (req, res) => {
   // Remove a pet from adoption.
 })
 
-module.exports = router
+router.delete('/', json, (req, res) => {
+  // Remove a cat from adoption.
+})
+
+router.delete('/', json, (req, res) => {
+  // Remove a dog from adoption.
+})
+
+
+
+module.exports = router;
