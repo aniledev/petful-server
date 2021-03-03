@@ -13,8 +13,8 @@ class Queue {
     this.last = null;
   }
 
+  // Add new data/node to the queue.
   enqueue(item) {
-    // Add new data/node to the queue.
     const node = new _Node(item);
 
     // if the the first node is empty
@@ -30,8 +30,24 @@ class Queue {
     this.last = node;
   }
 
+  // Remove some data from the queue.
   dequeue() {
-    // Remove some data from the queue.
+    // if the first node is empty, the queue is empty
+    if (this.first === null) {
+      return;
+    }
+
+    // once the first node is removed, the next node becomes the first node
+    const node = this.first;
+    this.first = this.first.next;
+
+    // the last node should be null since all nodes "move up one"
+    if (node === this.last) {
+      this.last = null;
+    }
+
+    // return only the first value because a queue is a FIFO data structure
+    return node.value;
   }
 
   show() {
@@ -43,4 +59,4 @@ class Queue {
   }
 }
 
-module.exports = Queue
+module.exports = Queue;
