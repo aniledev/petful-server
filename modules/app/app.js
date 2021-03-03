@@ -10,7 +10,7 @@ const errorHandler = require("../../error-handler");
 const logger = require("../../logger");
 const app = express();
 
-// MIDDLEWARE 
+// MIDDLEWARE
 const morganOption = NODE_ENV === "production" ? "tiny" : "dev";
 
 app.use(morgan(morganOption));
@@ -21,7 +21,10 @@ app.use(express.json());
 // ROUTES
 app.use("/people", require("../people/people.router"));
 app.use("/pets", require("../pets/pets.router"));
-// add a get endpoint that returns the string hello world
+// add a get endpoint that returns the string hello world used to test
+app.get("/", (req, res) => {
+  res.status(200).send("Hello, world!");
+});
 
 // ERROR HANDLING MIDDLEWARE
 app.use(errorHandler);
