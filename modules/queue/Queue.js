@@ -8,7 +8,9 @@ class _Node {
 
 class Queue {
   constructor() {
-    // Set initial data.
+    // Set initial data for empty queue
+    this.first = null;
+    this.last = null;
   }
 
   enqueue(data) {
