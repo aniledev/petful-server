@@ -9,7 +9,7 @@ const returnAll = require("../queue/Queue");
 let Dogs = new Queue();
 
 // for each dog in the array in the store, add the dog to the queue data structure
-store.dogs.forEach((dog) => pets.Dogs.enqueue(dog));
+store.dogs.forEach((dog) => Dogs.enqueue(dog));
 
 // --------------------
 
