@@ -13,8 +13,10 @@ store.people.forEach((person) => People.enqueue(person));
 // --------------------
 
 module.exports = {
-  get() {
-    // Return all people in the queue.
+  getPeople() {
+    // Return all people in the queue using the methods in the queue class
+    const getPeople = returnAll(People);
+    return getPeople;
   },
 
   enqueue(person) {
