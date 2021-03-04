@@ -1,4 +1,4 @@
-const Queue = require("../queue/Queue");
+import Queue from "../queue/Queue";
 const store = require("../../store");
 const returnAll = require("../queue/Queue");
 
