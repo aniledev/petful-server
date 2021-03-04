@@ -11,6 +11,7 @@ const catsRouter = require("../cats/cats.router");
 const dogsRouter = require("../dogs/dogs.router");
 const peopleRouter = require("../people/people.router");
 const errorHandler = require("../../error-handler");
+const notFoundError = require("../../not-found-error");
 const logger = require("../../logger");
 
 const app = express();
@@ -29,12 +30,14 @@ app.use("/api/cats", catsRouter);
 app.use("/api/dogs", dogsRouter);
 app.use("/api/people", peopleRouter);
 
-
 app.get("/", (req, res) => {
   res.status(200).send("Hello, world!");
 });
 
-// ERROR HANDLING MIDDLEWARE
+// 404 ERROR HANDLER MIDDLEWARE
+app.use(notFoundError);
+
+// GENERAL ERROR HANDLING MIDDLEWARE
 app.use(errorHandler);
 
 module.exports = app;
