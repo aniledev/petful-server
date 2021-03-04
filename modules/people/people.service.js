@@ -23,7 +23,14 @@ module.exports = {
   inQueue () {
     return People.showNext();
 },
+
+  enqueuePeople (name) {
+    // add a person to the store data and the queue
+    store.people.push(name);
+
     // Add a person to the queue.
+    People.enqueue(name);
+    return returnAll(People);
   },
 
   dequeue() {
