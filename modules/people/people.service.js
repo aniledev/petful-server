@@ -5,8 +5,10 @@ const { returnAll } = require("../queue/Queue");
 // Set up initial data.
 // --------------------
 
-const people = new Queue()
-store.people.forEach(person => people.enqueue(person))
+// create a new people queue using the data structure created
+const People = new Queue();
+
+store.people.forEach((person) => People.enqueue(person));
 
 // --------------------
 
