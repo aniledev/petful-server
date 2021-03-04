@@ -71,25 +71,25 @@ class Queue {
       console.log(currentNode.value);
       currentNode = currentNode.next;
     }
-  }
-
-  // Return all items in the queue.
-  returnAll() {
-    // declare an empty array
-    let result = [];
-
-    // declare current variable set to the first node
-    let currentNode = this.first;
-
-    // loop through nodes as long as the current node is not null
-    while (currentNode !== null) {
-      // push the value of the current node into the array & set the current node equal to the next node
-      result.push(currentNode.value);
-      currentNode = currentNode.next;
-    }
-    // return the array of all node values
-    return result;
-  }
+  }ds
 }
 
-module.exports = { Queue };
+// Return all items in the queue.
+function returnAll() {
+  // declare an empty array
+  let result = [];
+
+  // declare current variable set to the first node
+  let currentNode = this.first;
+
+  // loop through nodes as long as ttyhe current node is not null
+  while (currentNode !== null) {
+    // push the value of the current node into the array & set the current node equal to the next node
+    result.push(currentNode.value);
+    currentNode = currentNode.next;
+  }
+  // return the array of all node values
+  return result;
+}
+
+module.exports = { Queue, returnAll };
