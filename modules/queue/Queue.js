@@ -92,4 +92,4 @@ function returnAll() {
   return result;
 }
 
-module.exports = { Queue, returnAll };
+export { Queue, returnAll };
