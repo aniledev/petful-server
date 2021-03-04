@@ -6,10 +6,10 @@ const returnAll = require("../queue/Queue");
 // --------------------
 
 // create a new cats queue using the data structure created
-let cats = new Queue();
+let Cats = new Queue();
 
 // for each cat in the array in the store, add the cat to the queue data structure
-store.cats.forEach((cat) => cats.enqueue(cat));
+store.cats.forEach((cat) => Cats.enqueue(cat));
 
 // --------------------
 
