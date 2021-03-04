@@ -24,7 +24,7 @@ module.exports = {
     return People.showNext();
 },
 
-  enqueuePeople (name) {
+  enqueuePerson (name) {
     // add a person to the store data and the queue
     store.people.push(name);
 
@@ -33,7 +33,9 @@ module.exports = {
     return returnAll(People);
   },
 
-  dequeue() {
+  dequeuePerson() {
     // Remove a person from the queue.
-  }
-}
+    People.dequeue();
+    return returnAll(People);
+  },
+};
