@@ -20,11 +20,11 @@ module.exports = {
   },
 
   // is a function to show the next person in line necessary?
-  inQueue () {
+  inQueue() {
     return People.showNext();
-},
+  },
 
-  enqueuePerson (name) {
+  enqueuePerson(name) {
     // add a person to the store data and the queue
     store.people.push(name);
 
