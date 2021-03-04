@@ -20,9 +20,12 @@ module.exports = {
     return getCats;
   },
 
+  // is a function to show the next cat in line necessary?
+
   dequeueCats() {
     // Remove a cat from the cat queue
     const adoptedCat = Cats.dequeue();
+    // is a adopted property for the cat that is adopted neceesary for other features?
 
     // add the adopted cat back to the end of the queue so the queue is never empty
     Cats.enqueue(adoptedCat);
