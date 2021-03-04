@@ -71,7 +71,7 @@ class Queue {
       console.log(currentNode.value);
       currentNode = currentNode.next;
     }
-  }ds
+  }
 }
 
 // Return all items in the queue.
@@ -82,7 +82,7 @@ function returnAll() {
   // declare current variable set to the first node
   let currentNode = this.first;
 
-  // loop through nodes as long as ttyhe current node is not null
+  // loop through nodes as long as the current node is not null
   while (currentNode !== null) {
     // push the value of the current node into the array & set the current node equal to the next node
     result.push(currentNode.value);
