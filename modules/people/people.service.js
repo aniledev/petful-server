@@ -19,7 +19,10 @@ module.exports = {
     return getPeople;
   },
 
-  enqueue(person) {
+  // is a function to show the next person in line necessary?
+  inQueue () {
+    return People.showNext();
+},
     // Add a person to the queue.
   },
 
