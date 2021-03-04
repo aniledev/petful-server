@@ -1,4 +1,4 @@
-const Queue = require("../queue/Queue");
+const Queue = require("../../modules/queue/Queue.js");
 const store = require("../../store");
 const returnAll = require("../queue/Queue");
 
@@ -6,7 +6,7 @@ const returnAll = require("../queue/Queue");
 // --------------------
 
 // create a new cats queue using the data structure created
-let Cats = new Queue.default();
+let Cats = new Queue.Queue();
 
 // for each cat in the array in the store, add the cat to the queue data structure
 store.cats.forEach((cat) => Cats.enqueue(cat));
