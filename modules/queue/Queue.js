@@ -68,19 +68,18 @@ class Queue {
     // loop through the nodes as long as the current node is not null
     while (currentNode !== null) {
       // set the current node to be equal to the next node to keep looping
-      console.log(currentNode.value);
+      // console.log(currentNode.value);
       currentNode = currentNode.next;
     }
   }
 }
 
 // Return all items in the queue.
-function returnAll() {
+function returnAll(queue) {
   // declare an empty array
   let result = [];
-
   // declare current variable set to the first node
-  let currentNode = this.first;
+  let currentNode = queue.first;
 
   // loop through nodes as long as the current node is not null
   while (currentNode !== null) {
