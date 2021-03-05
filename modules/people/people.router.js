@@ -6,7 +6,7 @@ const People = require("../people/people.service");
 const peopleRouter = express.Router();
 
 peopleRouter.get("/", (req, res) => {
-  // Return all the people currently in the queue.
+  // Use the peopleSerivice to return all people from the queue using returnAll
 });
 
 peopleRouter.post("/", json, (req, res) => {

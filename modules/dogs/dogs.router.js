@@ -8,7 +8,7 @@ const People = require("../people/people.service");
 const dogsRouter = express.Router();
 
 dogsRouter.get("/", (req, res) => {
-  // Use the filter method to return all dogs currently up for adoption in the cats array in a json format
+  // Use the dogsSerivice to return all dogs from the queue using returnAll
   // status code of 200, success
   res.status(200).json(store);
 });
