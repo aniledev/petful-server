@@ -3,13 +3,13 @@ const json = require("body-parser").json();
 
 const People = require("../people/people.service");
 
-const router = express.Router();
+const peopleRouter = express.Router();
 
-router.get("/", (req, res) => {
+peopleRouter.get("/", (req, res) => {
   // Return all the people currently in the queue.
 });
 
-router.post("/", json, (req, res) => {
+peopleRouter.post("/", json, (req, res) => {
   // Add a new person to the queue.
 });
 
