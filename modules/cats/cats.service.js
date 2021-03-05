@@ -1,6 +1,6 @@
 const Queue = require("../../modules/queue/Queue.js");
 const store = require("../../store");
-const returnAll = require("../queue/Queue");
+const returnAll = require("../queue/Queue.js");
 
 // Set up initial data.
 // --------------------
@@ -16,7 +16,7 @@ store.cats.forEach((cat) => Cats.enqueue(cat));
 module.exports = {
   getCats() {
     // Returns the cat array using the methods in the queue class
-    const getCats = Cats.returnAll(Cats);
+    const getCats = Queue.returnAll(Cats);
     return getCats;
   },
 
