@@ -1,9 +1,7 @@
 const express = require("express");
 const json = require("body-parser").json();
-const store = require("../../store");
 
 const Cats = require("./cats.service");
-const People = require("../people/people.service");
 
 const catsRouter = express.Router();
 
