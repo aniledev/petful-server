@@ -23,6 +23,8 @@
 ```DELETE /api/people```
 
 ## Status Codes
+The API here returns the following status codes:
+
 | Status Code  | Description |
 | ------------- | ------------- |
 | 200  | Ok  |
