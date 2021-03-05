@@ -16,7 +16,7 @@ store.cats.forEach((cat) => Cats.enqueue(cat));
 module.exports = {
   getCats() {
     // Returns the cat array using the methods in the queue class
-    const getCats = returnAll(Cats);
+    const getCats = Cats.returnAll(Cats);
     return getCats;
   },
 
