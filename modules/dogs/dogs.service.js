@@ -16,11 +16,11 @@ store.dogs.forEach((dog) => Dogs.enqueue(dog));
 module.exports = {
   getDogs() {
     // Return the dog array using the methods in the queue class.
-    const getDogs = returnAll(Dogs);
+    const getDogs = Queue.returnAll(Dogs);
     return getDogs;
   },
 
-  dequeueDogs(type) {
+  dequeueDogs() {
     // remove a dog from the dog queue
     const adoptedDog = Dogs.dequeue();
     // add the adopted dog back to the end of the queue so that the queue is never empty
