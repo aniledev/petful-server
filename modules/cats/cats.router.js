@@ -7,7 +7,6 @@ const People = require("../people/people.service");
 
 const catsRouter = express.Router();
 
-
 catsRouter.get("/", (req, res) => {
   // Use the filter method to return all cats currently up for adoption in the cats array in a json format
   // status code of 200, success
