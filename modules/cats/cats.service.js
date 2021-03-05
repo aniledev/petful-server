@@ -29,6 +29,6 @@ module.exports = {
 
     // add the adopted cat back to the end of the queue so the queue is never empty
     Cats.enqueue(adoptedCat);
-    return returnAll(Cats);
+    return Queue.returnAll(Cats);
   },
 };
