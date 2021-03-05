@@ -1,12 +1,12 @@
-const Queue = require("../queue/Queue");
+const Queue = require("../../modules/queue/Queue.js");
 const store = require("../../store");
-const { returnAll } = require("../queue/Queue");
+const returnAll  = require("../queue/Queue");
 
 // Set up initial data.
 // --------------------
 
 // create a new people queue using the data structure created
-const People = new Queue();
+let People = new Queue.Queue();
 
 store.people.forEach((person) => People.enqueue(person));
 
