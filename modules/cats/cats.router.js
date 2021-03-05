@@ -7,15 +7,12 @@ const People = require("../people/people.service");
 
 const catsRouter = express.Router();
 
-catsRouter.get("/", (req, res) => {
-  // Use the filter method to return all cats currently up for adoption in the cats array in a json format
-  // status code of 200, success
-  res.status(200).json(store);
-});
-
-catsRouter.delete("/", json, (req, res) => {
-  // Remove a cat from adoption, first in first out, you can only delete the first item in the array, delete the first cat
-  // status code of 204??, end() ??
-});
+catsRouter
+  .route("/")
+  .get((req, res) => {
+    // Use the catsService to return all cats from the queue using returnAll
+    // status code of 200, success
+    res.status(200).json(Cats.getCats());
+  })
 
 module.exports = catsRouter;
