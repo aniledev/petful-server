@@ -1,12 +1,14 @@
 # Petful Server
 
+Client Repo:
+API Repo: 
+Live API hosted on Heroku: https://fifo-pet-server.herokuapp.com/
+
 ## Application Summary
 
 This backend server is to be used with the petful-client and provides support for the First In First Out pet adoption client. This repo directory is organizes by source files, files related to the /api/cats endpoint, the /api/dogs endpoint, and the /api/people endpoint.
 
 Each endpoint uses the express.Router class to create modularized route handlers. Additionally, the routers make use of a service to easily preform actions using the queue data structure.
-
-## User Stories 
 
 
 ## Technology Used
