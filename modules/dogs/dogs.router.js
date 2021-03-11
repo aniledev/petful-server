@@ -16,7 +16,7 @@ dogsRouter
     // Remove a dog from adoption, first in first out, you can only delete the first item in the array, delete the first dog
     Dogs.dequeueDogs();
     // status code of 204??, end() ??
-    res.status(204).send("Dog successfully deleted/adopted from queue!").end();
+    res.status(200).send("Dog successfully deleted/adopted from queue!").end();
   });
 
 module.exports = dogsRouter;
