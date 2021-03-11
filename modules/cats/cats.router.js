@@ -12,7 +12,7 @@ catsRouter
     // status code of 200, success
     res.status(200).json(Cats.getCats());
   })
-  .delete(json, (req, res) => {
+  .delete((req, res) => {
     // Remove a cat from adoption, use the dequeueCats in the cat service
     Cats.dequeueCats();
     // status code of 204, end req res cycle

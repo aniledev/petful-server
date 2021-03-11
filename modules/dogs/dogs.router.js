@@ -12,7 +12,7 @@ dogsRouter
     // status code of 200, success
     res.status(200).json(Dogs.getDogs());
   })
-  .delete(json, (req, res) => {
+  .delete((req, res) => {
     // Remove a dog from adoption, first in first out, you can only delete the first item in the array, delete the first dog
     Dogs.dequeueDogs();
     // status code of 204??, end() ??
