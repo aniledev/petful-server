@@ -5,12 +5,12 @@ const People = require("../people/people.service");
 
 const peopleRouter = express.Router();
 
-peopleRouter.get("/", (req, res) => {
-  // Use the peopleSerivice to return all people from the queue using returnAll
-});
-
-peopleRouter.post("/", json, (req, res) => {
-  // Add a new person to the queue.
+peopleRouter
+  .route("/")
+  .get((req, res) => {
+    // Use the peopleService to return all people from the queue using returnAll
+    res.status(200).json(People.getPeople());
+  })
 });
 
 module.exports = peopleRouter;
