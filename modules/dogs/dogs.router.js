@@ -1,6 +1,6 @@
 const express = require("express");
 const json = require("body-parser").json();
-const store = require("../../store");
+const store = require("../../src/store");
 
 const Dogs = require("./dogs.service");
 const People = require("../people/people.service");

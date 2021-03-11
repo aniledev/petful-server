@@ -5,13 +5,13 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 const winston = require("winston");
-const { NODE_ENV, PORT } = require("../../config");
+const { NODE_ENV, PORT } = require("../../src/config");
 const catsRouter = require("../cats/cats.router");
 const dogsRouter = require("../dogs/dogs.router");
 const peopleRouter = require("../people/people.router");
-const errorHandler = require("../../error-handler");
-const notFoundError = require("../../not-found-error");
-const logger = require("../../logger");
+const errorHandler = require("../../src/error-handler");
+const notFoundError = require("../../src/not-found-error");
+const logger = require("../../src/logger");
 
 const app = express();
 

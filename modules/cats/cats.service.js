@@ -1,5 +1,5 @@
 const Queue = require("../../modules/queue/Queue.js");
-const store = require("../../store");
+const store = require("../../src/store");
 const returnAll = require("../queue/Queue.js");
 
 // Set up initial data.
