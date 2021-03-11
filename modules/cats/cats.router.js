@@ -15,7 +15,7 @@ catsRouter
   .delete((req, res) => {
     // Remove a cat from adoption, use the dequeueCats in the cat service
     Cats.dequeueCats();
-    // status code of 204, end req res cycle
+    // status code of 200, end req res cycle
     res.status(200).send("Cat successfully deleted/adopted!");
   });
 
