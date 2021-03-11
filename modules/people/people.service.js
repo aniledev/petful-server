@@ -15,7 +15,7 @@ store.people.forEach((person) => People.enqueue(person));
 module.exports = {
   getPeople() {
     // Return all people in the queue using the methods in the queue class
-    const getPeople = returnAll(People);
+    const getPeople = Queue.returnAll(People);
     return getPeople;
   },
 
@@ -29,13 +29,12 @@ module.exports = {
     store.people.push(name);
 
     // Add a person to the queue.
-    People.enqueue(name);
-    return returnAll(People);
+    return Queue.returnAll(People);
   },
 
   dequeuePerson() {
     // Remove a person from the queue.
     People.dequeue();
-    return returnAll(People);
+    return Queue.returnAll(People);
   },
 };
