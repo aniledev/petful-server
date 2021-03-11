@@ -25,6 +25,6 @@ module.exports = {
     const adoptedDog = Dogs.dequeue();
     // add the adopted dog back to the end of the queue so that the queue is never empty
     Dogs.enqueue(adoptedDog);
-    return returnAll(Dogs);
+    return Queue.returnAll(Dogs);
   },
 };
