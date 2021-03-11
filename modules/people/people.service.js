@@ -24,11 +24,12 @@ module.exports = {
     return People.showNext();
   },
 
-  enqueuePerson(name) {
+  enqueuePerson(newName) {
     // add a person to the store data and the queue
-    store.people.push(name);
+    store.people.push(newName);
 
     // Add a person to the queue.
+    People.enqueue(newName);
     return Queue.returnAll(People);
   },
 
