@@ -35,7 +35,10 @@ module.exports = {
 
   dequeuePerson() {
     // Remove a person from the queue.
-    People.dequeue();
+    const adopter = People.dequeue();
+
+    // add person back to the queue so that the demo runs continuously
+    People.enqueue(adopter);
     return Queue.returnAll(People);
   },
 };
