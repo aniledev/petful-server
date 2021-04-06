@@ -20,7 +20,7 @@ module.exports = {
     "Joey Larson",
     "Essie Schuster",
     "Pedro Homenick",
-    "Dr. Zachary Feil",
+    "Joey Larson",
   ],
 
   dogs: [
