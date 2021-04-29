@@ -17,9 +17,7 @@ peopleRouter
     res.status(200).json(People.dequeuePerson());
   })
   .post(json, (req, res) => {
-    // access the req body
     const { name } = req.body;
-    // const newPerson = { name };
     // Add a new person to the queue.
     const newPeopleQueue = People.enqueuePerson(name);
     // send back json data of the new queue

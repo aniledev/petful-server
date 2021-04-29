@@ -1,17 +1,9 @@
 const Queue = require("../../modules/queue/Queue.js");
 const store = require("../../src/store");
-const returnAll = require("../queue/Queue");
-
-// Set up initial data.
-// --------------------
 
 // create a new dogs queue using the data structure created
 let Dogs = new Queue.Queue();
-
-// for each dog in the array in the store, add the dog to the queue data structure
 store.dogs.forEach((dog) => Dogs.enqueue(dog));
-
-// --------------------
 
 module.exports = {
   getDogs() {

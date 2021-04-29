@@ -1,8 +1,5 @@
 const express = require("express");
-const json = require("body-parser").json();
-
 const Dogs = require("./dogs.service");
-
 const dogsRouter = express.Router();
 
 dogsRouter
