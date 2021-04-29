@@ -26,10 +26,6 @@
   </ol>
 </details>
 
-Client Repo:
-API Repo:
-Live API hosted on Heroku: https://fifo-pet-server.herokuapp.com/
-
 ## Application Summary
 
 This backend server is to be used with the aniledev/petful-client and provides support for the First In First Out pet adoption client. This repo directory is organized by source files, files related to the /api/cats endpoint, the /api/dogs endpoint, and the /api/people endpoint.
