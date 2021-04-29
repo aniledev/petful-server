@@ -1,4 +1,32 @@
-# Petful Server
+<h1 align="center">Petful Server</h1>
+<h3 align="center">A back-end server that returns information regarding pets to be adopted</h3>
+
+<p align="center">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/aniledev/petful-server">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/aniledev/petful-server">
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/aniledev/petful-server">
+<img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/aniledev/petful-server">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/aniledev/petful-server?color=red">
+<img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/aniledev/petful-server?color=blueviolet">
+</p>
+
+## Contents
+
+<details open="open">
+  <summary>Contents</summary>
+  <ol>
+    <li><a href="#application-summary">Application Summary</a></li>
+    <li><a href="#api-documentation">API Documentation</a></li>
+    <li><a href="#local-dev-setup">Local Dev Setup</a></li>
+    <li><a href="#configuring-postgresql">Configuring PostgreSQL</a></li>
+    <li><a href="#scripts">Scripts</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#technical-aspects">Technical Aspects</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#connect-with-me">Connect With Me</a></li>
+  </ol>
+</details>
 
 Client Repo:
 API Repo:
